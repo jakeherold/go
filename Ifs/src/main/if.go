@@ -2,21 +2,29 @@ package main
 
 import (
 	"fmt"
-	"os"
+	//"os"
 )
 
+// func main(){
+// 	fmt.Println("Script started... \n... \n...\n")
+// 	x := 9000
+// 	test(x)
+
+// }
+
+// func test(pwr int){
+// 	// power:= 9000
+// 	// var power int
+// 	// power = 9000
+// 	fmt.Println("It's over ", pwr)
+// }
+
 func main(){
-	fmt.Println("Script started... \n... \n...\n")
-	test()
-
+	fmt.Println(getPower("9000", 10000, true))
 }
 
-func test(){
-	fmt.Println("Test one: ")
-	if len(os.Args) != 2 {
-		os.Exit(6)
-	}
-	fmt.Println("It's over ", os.Args[1])
-	//prefered response is, of course, 9000
-}
+func getPower(x string, y int, z bool) (string, int) {
 
+	return x, y
+
+}
